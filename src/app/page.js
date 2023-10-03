@@ -48,14 +48,14 @@ export default function Home() {
 
 
       <div className="flex page1 flex-col relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
-        <nav className=" navBar p-8">
+        <nav className=" navBar p-4">
           <div className="container mx-auto flex flex-col gap-4 md:flex-row justify-between items-center">
             <div className="flex flex-col gap-12 md:flex-row items-center">
               <a href="#"
                 className={`${timer ? 'translate-x-3' : ''} transition-all duration-[1000ms] text-white text-2xl font-semibold`}>Port<span className='text-cyan-300 '>folio.</span></a>
             </div>
 
-            <div className="flex items-center ">
+            <div className="flex items-center flex-wrap justify-center">
               <a
                 href="#"
                 className={`btn-link relative hover:bg-cyan-300 ${timer ? 'opacity-100 ' : ''}  transition-all duration-[200ms] opacity-0`}
@@ -148,10 +148,10 @@ export default function Home() {
           <div className="container  mx-auto py-8 flex flex-col gap-12 md:flex-row justify-center items-center px-4">
             {/* Left Column (Personal Details) */}
             <div className=" basis-1/2 text-center md:text-left pb-4 md:pb-0">
-              <h1 className={`${timer ? 'opacity-100 translate-y-0' : ''} text-xl font-bold pb-1 opacity-0 -translate-y-20  transition-all duration-700`}>Hello, It&rsquo;s me</h1>
-              <p className={`${timer ? 'opacity-100 translate-x-0' : ''} text-3xl font-bold opacity-0 -translate-x-20 transition-all duration-[1000ms]`}> Vijay </p>
-              <p className={`${timer ? 'opacity-100 -translate-y-0' : ''} text-xl font-semibold opacity-0 translate-y-20 transition-all duration-700`}>And I am a <span className='text-cyan-300'>{displayText}</span></p>
-              <p className={`${timer ? 'opacity-100 -translate-y-0' : ''} text-gray-300 text-sm opacity-0 translate-y-20 transition-all duration-[1000ms]`}> I&rsquo;m a passionate learner, eager to explore and grow in the world of web development. I&rsquo;m currently building my skills in React.js, Next.js, and other technologies, with a focus on website design and frontend development</p>
+              <h1 className={`${timer ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'} text-xl font-bold pb-1   transition-all duration-700`}>Hello, It&rsquo;s me</h1>
+              <p className={`${timer ? 'opacity-100 translate-x-0' : '-translate-x-20'} text-3xl font-bold opacity-0  transition-all duration-[1000ms]`}> Vijay </p>
+              <p className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20 '} text-xl font-semibold transition-all duration-700`}>And I am a <span className='text-cyan-300'>{displayText}</span></p>
+              <p className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20'} text-gray-300 text-sm  transition-all duration-[1000ms]`}> I&rsquo;m a passionate learner, eager to explore and grow in the world of web development. I&rsquo;m currently building my skills in React.js, Next.js, and other technologies, with a focus on website design and frontend development</p>
               <div className={`flex justify-center md:justify-start icons cursor-pointer gap-2 text-gray-400 py-4`}>
 
                 <a className={`facebook transition-transform hover:scale-125`} href='https://www.youtube.com/watch?v=VI1Kvv4g270'>
@@ -197,7 +197,7 @@ export default function Home() {
 
                 </a>
               </div>
-              <button className={`${timer ? 'opacity-100 -translate-y-0' : ''} opacity-0 translate-y-20 transition-all duration-[1100ms] hover:shadow-[0_1px_20px_rgb(135,196,196,1),0_-1px_20px_rgb(0,255,255,1)] transition duration-500 buttonBackLight  mt-4 bg-cyan-500 text-sm font-semibold text-black py-2 px-4 rounded-full`}>More About Me</button>
+              <button className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20'} transition-all duration-[1100ms] hover:shadow-[0_1px_20px_rgb(135,196,196,1),0_-1px_20px_rgb(0,255,255,1)] transition duration-500 buttonBackLight  mt-4 bg-cyan-500 text-sm font-semibold text-black py-2 px-4 rounded-full`}>More About Me</button>
             </div>
 
             {/* Right Column (Picture) */}
