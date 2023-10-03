@@ -8,7 +8,7 @@ import todo from '../assets/todoapp.png';
 import swiggy from '../assets/swiggyapp.png';
 import whatsup from '../assets/whatsup.png';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 
 export default function Home() {
@@ -36,6 +36,19 @@ export default function Home() {
     }
   }, [timer]);
 
+  const pageRefs = {
+    page1: useRef(null),
+    page2: useRef(null),
+    page3: useRef(null),
+    page4: useRef(null),
+  };
+
+  const scrollToPage = (page) => {
+    if (pageRefs[page].current) {
+      pageRefs[page].current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
 
   return (
     <main>
@@ -47,7 +60,11 @@ export default function Home() {
       </div>
 
 
-      <div className="flex page1 flex-col relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
+      <button onClick={() => scrollToPage('page2')}>Scroll to Page 2</button>
+
+
+      <div ref={pageRefs.page1} className="flex page1 flex-col  relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
+
         <nav className=" navBar p-4">
           <div className="container mx-auto flex flex-col gap-4 md:flex-row justify-between items-center">
             <div className="flex flex-col gap-12 md:flex-row items-center">
@@ -56,7 +73,7 @@ export default function Home() {
             </div>
 
             <div className="flex items-center flex-wrap justify-center">
-              <a
+              <a onClick={() => scrollToPage('page1')}
                 href="#"
                 className={`btn-link relative hover:bg-cyan-300 ${timer ? 'opacity-100 ' : ''}  transition-all duration-[200ms] opacity-0`}
               >
@@ -77,7 +94,7 @@ export default function Home() {
                 </svg>
                 <span >About</span>
               </a >
-              <a
+              <a onClick={() => scrollToPage('page4')}
                 href="#"
                 className={`btn-link relative hover:bg-cyan-300 ${timer ? 'opacity-100 -translate-y-0' : 'translate-y-20'}  transition-all duration-[600ms] opacity-0`}
               >
@@ -98,7 +115,7 @@ export default function Home() {
                 </svg>
                 <span >Contact</span>
               </a >
-              <a
+              <a onClick={() => scrollToPage('page2')}
                 href="#"
                 className={`btn-link relative hover:bg-cyan-300 ${timer ? 'opacity-100 -translate-y-0' : 'translate-y-20'}  transition-all duration-[1000ms] opacity-0`}
               >
@@ -119,7 +136,7 @@ export default function Home() {
                 </svg>
                 <span >Skills</span>
               </a >
-              <a
+              <a onClick={() => scrollToPage('page3')}
                 href="#"
                 className={`btn-link relative hover:bg-cyan-300 ${timer ? 'opacity-100 -translate-y-0' : 'translate-y-20'}  transition-all duration-[1400ms] opacity-0`}
               >
@@ -211,7 +228,7 @@ export default function Home() {
         </div>
       </div >
 
-      <div className="flex page2 flex-col relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
+      <div ref={pageRefs.page2} className="flex page2 flex-col relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
         <div className='flex grow content'>
           <div className="container  mx-auto py-8 flex flex-col gap-36 md:flex-row justify-center items-center px-4">
             {/* Left Column (Picture) */}
@@ -234,7 +251,7 @@ export default function Home() {
         </div>
       </div >
 
-      <div className="flex  page3 flex-col  relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
+      <div ref={pageRefs.page3} className="flex  page3 flex-col  relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
         <h1 className='text-3xl font-bold w-full pt-4 pb-2'>Latest<span className='text-cyan-300'> Project</span></h1>
 
         <div className='flex flex-col grow justify-around'>
@@ -288,7 +305,7 @@ export default function Home() {
         </div>
       </div >
 
-      <div className="flex page4 flex-col relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
+      <div ref={pageRefs.page4} className="flex page4 flex-col relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
 
         <section className='flex grow content'>
           <div className="container mx-auto py-8 flex flex-col gap-12 md:flex-row justify-center items-center px-4">
@@ -385,9 +402,9 @@ export default function Home() {
           </div>
         </section>
 
-        <footer className="flex justify-center bg-cyan-800  p-3 ">
+        <footer className="flex justify-center bg-cyan-800 p-3 ">
           <p>
-            Developed with love by Vijay Nagavelu 	&copy; 2023
+            Developed by Vijay Nagavelu 	&copy; 2023
           </p>
         </footer>
 
