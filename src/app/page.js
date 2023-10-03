@@ -230,50 +230,50 @@ export default function Home() {
         </div>
       </div >
 
-      <div className="flex  page3 flex-col  relative z-100 text-white text-center md:h-screen bg-white bg-opacity-40 ">
+      <div className="flex  page3 flex-col  relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
         <h1 className='text-3xl font-bold w-full pt-4 pb-2'>Latest<span className='text-cyan-300'> Project</span></h1>
 
         <div className='flex flex-col grow justify-around'>
 
           <section className="container mx-auto py-0 flex flex-col gap-12 md:flex-row justify-center items-center px-4">
-            <div className="basis-1/3  hover:scale-[1.1] scale-[1] relative md:p-0 transition-all duration-500 ease-in-out">
-              <div className='flex'>
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1] relative md:p-0 transition-all duration-500 ease-in-out">
+              <div className='flex w-[94%] '>
                 <Image src={budget} alt="Your Picture" className="rounded-lg mx-auto relative z-10" />
               </div>
               <p className='font-bold text-lg'>Budget<span className='text-cyan-300 '>App</span></p>
             </div>
 
-            <div className="basis-1/3  hover:scale-[1.1] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
                 <Image src={movies} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
               </div>
-              <p className='font-bold text-lg'>Interactive<span className='text-cyan-300 '>Page</span></p>
+              <p className='font-bold text-lg'>Movies<span className='text-cyan-300 '>Page</span></p>
             </div>
 
-            <div className="basis-1/3  hover:scale-[1.1] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
                 <Image src={whatsup} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
               </div>
-              <p className='font-bold text-lg'>Todo<span className='text-cyan-300 '>App</span></p>
+              <p className='font-bold text-lg'>Whatsup<span className='text-cyan-300 '>App</span></p>
             </div>
           </section>
 
           <section className="container mx-auto py-0 flex flex-col gap-12 md:flex-row justify-center items-center px-4">
-            <div className="basis-1/3  hover:scale-[1.1] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
                 <Image src={swiggy} alt="Your Picture" className="rounded-lg mx-auto relative z-10" />
               </div>
               <p className='font-bold text-lg'>SwiggyClone<span className='text-cyan-300 '>App</span></p>
             </div>
 
-            <div className="basis-1/3  hover:scale-[1.1] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
                 <Image src={cash} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
               </div>
               <p className='font-bold text-lg'>Interactive<span className='text-cyan-300 '>Page</span></p>
             </div>
 
-            <div className="basis-1/3  hover:scale-[1.1] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
                 <Image src={todo} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
               </div>
