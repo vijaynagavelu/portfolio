@@ -7,7 +7,6 @@ import movies from '../assets/movies.png';
 import todo from '../assets/todoapp.png';
 import swiggy from '../assets/swiggyapp.png';
 import whatsup from '../assets/whatsup.png';
-
 import React, { useEffect, useRef, useState } from 'react';
 
 
@@ -58,9 +57,6 @@ export default function Home() {
           <source src="/Galaxy4K.mp4" type="video/mp4" />
         </video>
       </div>
-
-
-      <button onClick={() => scrollToPage('page2')}>Scroll to Page 2</button>
 
 
       <div ref={pageRefs.page1} className="flex page1 flex-col  relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
@@ -165,10 +161,10 @@ export default function Home() {
           <div className="container  mx-auto py-8 flex flex-col gap-12 md:flex-row justify-center items-center px-4">
             {/* Left Column (Personal Details) */}
             <div className=" basis-1/2 text-center md:text-left pb-4 md:pb-0">
-              <h1 className={`${timer ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'} text-xl font-bold pb-1   transition-all duration-700`}>Hello, It&rsquo;s me</h1>
-              <p className={`${timer ? 'opacity-100 translate-x-0' : '-translate-x-20'} text-3xl font-bold opacity-0  transition-all duration-[1000ms]`}> Vijay </p>
+              <h1 className={`${timer ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-20'} text-xl font-bold pb-2   transition-all duration-700`}>Hello, It&rsquo;s me</h1>
+              <p className={`${timer ? 'opacity-100 translate-x-0' : '-translate-x-20'} text-3xl font-bold opacity-0 pb-2 transition-all duration-[1000ms]`}> Vijay </p>
               <p className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20 '} text-xl font-semibold transition-all duration-700`}>And I am a <span className='text-cyan-300'>{displayText}</span></p>
-              <p className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20'} text-gray-300 text-sm  transition-all duration-[1000ms]`}> I&rsquo;m a passionate learner, eager to explore and grow in the world of web development. I&rsquo;m currently building my skills in React.js, Next.js, and other technologies, with a focus on website design and frontend development</p>
+              <p className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20'} text-gray-300 text-base  transition-all duration-[1000ms]`}> I&rsquo;m a passionate learner, eager to explore and grow in the world of web development. I&rsquo;m currently building my skills in React.js, Next.js, and other technologies, with a focus on website design and frontend development</p>
               <div className={`flex justify-center md:justify-start icons cursor-pointer gap-2 text-gray-400 py-4`}>
 
                 <a className={`facebook transition-transform hover:scale-125`} href='https://www.youtube.com/watch?v=VI1Kvv4g270'>
@@ -214,7 +210,7 @@ export default function Home() {
 
                 </a>
               </div>
-              <button className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20'} transition-all duration-[1100ms] hover:shadow-[0_1px_20px_rgb(135,196,196,1),0_-1px_20px_rgb(0,255,255,1)] transition duration-500 buttonBackLight  mt-4 bg-cyan-500 text-sm font-semibold text-black py-2 px-4 rounded-full`}>More About Me</button>
+              <button onClick={() => scrollToPage('page2')} className={`${timer ? 'opacity-100 -translate-y-0' : 'opacity-0 translate-y-20'} transition-all duration-[1100ms] hover:shadow-[0_1px_20px_rgb(135,196,196,1),0_-1px_20px_rgb(0,255,255,1)] transition duration-500 buttonBackLight  mt-4 bg-cyan-500 text-sm font-semibold text-black py-2 px-4 rounded-full`}>More About Me</button>
             </div>
 
             {/* Right Column (Picture) */}
@@ -242,10 +238,10 @@ export default function Home() {
             <div className=" basis-1/2 text-center md:text-left pb-4 md:pb-0">
               <p className="text-3xl font-bold pb-2 "> About<span className='text-cyan-300'> Me</span></p>
               <p className="text-xl font-semibold pb-4">Frontend Developer!</p>
-              <p className="text-gray-200 text-sm pb-4">
+              <p className="text-gray-200 text-base pb-4">
                 Hey, I&rsquo;m Vijay, a frontend enthusiast diving into web development. I&rsquo;m passionate about React.js, Next.js, and Tailwind CSS for captivating design. JavaScript powers my interactivity, and HTML/CSS set the stage. I also explore REST APIs to fetch data from the digital realm. Join me on my journey to become a frontend maestro crafting captivating web experiences. 🚀💡💻 #WebDev #FutureFrontendPro
               </p>
-              <button className="hover:shadow-[0_1px_20px_rgb(135,196,196,1),0_-1px_20px_rgb(0,255,255,1)] transition duration-500 buttonBackLight  mt-4 bg-cyan-500 text-sm font-semibold text-black py-2 px-4 rounded-full ">More About Me</button>
+              <button onClick={() => scrollToPage('page3')} className="hover:shadow-[0_1px_20px_rgb(135,196,196,1),0_-1px_20px_rgb(0,255,255,1)] transition duration-500 buttonBackLight  mt-4 bg-cyan-500 text-sm font-semibold text-black py-2 px-4 rounded-full ">More About Me</button>
             </div>
           </div>
         </div>
@@ -254,28 +250,28 @@ export default function Home() {
       <div ref={pageRefs.page3} className="flex  page3 flex-col  relative z-100 text-white text-center md:h-screen bg-black bg-opacity-40 ">
         <h1 className='text-3xl font-bold w-full pt-4 pb-2'>Latest<span className='text-cyan-300'> Project</span></h1>
 
-        <div className='flex flex-col grow justify-around'>
+        <div className='flex flex-col gap-12 md:gap-0 grow justify-around'>
 
           <section className="container mx-auto py-0 flex flex-col gap-12 md:flex-row justify-center items-center px-4">
-            <div className="basis-1/3  hover:scale-[1.05] scale-[1] relative md:p-0 transition-all duration-500 ease-in-out">
-              <div className='flex w-[94%] '>
-                <Image src={budget} alt="Your Picture" className="rounded-lg mx-auto relative z-10" />
-              </div>
-              <p className='font-bold text-lg'>Budget<span className='text-cyan-300 '>App</span></p>
-            </div>
-
-            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
-              <div className='flex'>
-                <Image src={movies} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
-              </div>
-              <p className='font-bold text-lg'>Movies<span className='text-cyan-300 '>Page</span></p>
-            </div>
-
             <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
                 <Image src={whatsup} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
               </div>
               <p className='font-bold text-lg'>Whatsup<span className='text-cyan-300 '>App</span></p>
+            </div>
+
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
+              <div className='flex'>
+                <Image src={cash} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
+              </div>
+              <p className='font-bold text-lg'>Interactive<span className='text-cyan-300 '>Page</span></p>
+            </div>
+
+            <div className="basis-1/3  hover:scale-[1.05] scale-[1] relative md:p-0 transition-all duration-500 ease-in-out">
+              <div className='flex w-[94%] '>
+                <Image src={budget} alt="Your Picture" className="rounded-lg mx-auto relative z-10" />
+              </div>
+              <p className='font-bold text-lg'>Budget<span className='text-cyan-300 '>App</span></p>
             </div>
           </section>
 
@@ -289,10 +285,12 @@ export default function Home() {
 
             <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
-                <Image src={cash} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
+                <Image src={movies} alt="Your Picture" className="  rounded-lg mx-auto relative z-10" />
               </div>
-              <p className='font-bold text-lg'>Interactive<span className='text-cyan-300 '>Page</span></p>
+              <p className='font-bold text-lg'>Movies<span className='text-cyan-300 '>Page</span></p>
             </div>
+
+
 
             <div className="basis-1/3  hover:scale-[1.05] scale-[1]  relative  md:p-0 transition-all duration-500 ease-in-out">
               <div className='flex'>
