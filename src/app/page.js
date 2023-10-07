@@ -416,7 +416,7 @@ export default function Home() {
                 <h1 className="text-2xl font-bold pb-4">Contact <span className='text-cyan-300'>Me</span></h1>
               </div>
               <p className="text-lg font-semibold pb-2">Let&rsquo;s Work Together </p>
-              <p className="text-gray-300 text-base pb-6">Two minds, one mission: crafting brilliance together. Let's spark innovation!" ✨🤝 #CollaborativeGenius</p>
+              <p className="text-gray-300 text-base pb-6">Two minds, one mission: crafting brilliance together. Let&rsquo;s spark innovation! ✨🤝 #CollaborativeGenius</p>
 
               <div className="flex justify-center md:justify-start gap-1 text-base font-semibold pb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="cyan" fill="none" stroke-linecap="round" stroke-linejoin="round">
