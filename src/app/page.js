@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image'
-import sample from '../assets/click_here.png';
 import budget from '../assets/budgetapp.png';
 import cash from '../assets/cashapp.png';
 import movies from '../assets/movies.png';
