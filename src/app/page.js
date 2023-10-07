@@ -414,10 +414,10 @@ export default function Home() {
             {/* Left Column (Personal Details) */}
             <div className=" basis-1/2 text-center md:text-left pb-4 md:pb-0">
               <div className='flex justify-center'>
-                <h1 className="text-xl font-bold pb-4">Contact <span className='text-cyan-300'>Me</span></h1>
+                <h1 className="text-2xl font-bold pb-4">Contact <span className='text-cyan-300'>Me</span></h1>
               </div>
-              <p className="text-md font-semibold pb-2">Let&rsquo;s Work Together </p>
-              <p className="text-gray-300 text-sm pb-6"> I&rsquo;m a passionate learner, eager to explore and grow in the world of web development. I&rsquo;m currently building my skills in React.js, Next.js, and other technologies, with a focus on website design and frontend development</p>
+              <p className="text-lg font-semibold pb-2">Let&rsquo;s Work Together </p>
+              <p className="text-gray-300 text-base pb-6">Two minds, one mission: crafting brilliance together. Let's spark innovation!" ✨🤝 #CollaborativeGenius</p>
 
               <div className="flex justify-center md:justify-start gap-1 text-base font-semibold pb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-send" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="cyan" fill="none" stroke-linecap="round" stroke-linejoin="round">
